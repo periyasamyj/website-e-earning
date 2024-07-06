@@ -22,7 +22,7 @@ def allowed_file(filename):
 
 
 # Create a new client and connect to the server
-client = MongoClient(os.getenv("uri"), server_api=ServerApi('1'))
+client = MongoClient("mongodb+srv://periyasamyj51:poomani@2005Bd@cluster0.rc3fnqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", server_api=ServerApi('1'))
 
 # Send a ping to confirm a successful connection
 try:
