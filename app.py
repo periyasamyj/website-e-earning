@@ -21,8 +21,10 @@ def allowed_file(filename):
 
 
 
+uri = "mongodb+srv://periyasamyj51:7wIsGre0mwO68qR5@cluster0.rc3fnqk.mongodb.net/?appName=Cluster0"
+
 # Create a new client and connect to the server
-client = MongoClient("mongodb+srv://periyasamyj51:poomani@2005Bd@cluster0.rc3fnqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'))
 
 # Send a ping to confirm a successful connection
 try:
@@ -31,15 +33,6 @@ try:
 except Exception as e:
     print(e)
 
-# Create a new client and connect to the server
-#client = MongoClient(os.getenv("uri"), server_api=ServerApi('1'))
-
-# Send a ping to confirm a successful connection
-#try:
-   # client.admin.command('ping')
-   # print("Pinged your deployment. You successfully connected to MongoDB!")
-#except Exception as e:
-   # print(e)
 
 db_name="course_application"
 database=client[db_name]
