@@ -21,7 +21,7 @@ def allowed_file(filename):
 
 
 
-uri = "mongodb+srv://periyasamyj51:Z37lUFik2LxmMpur@cluster0.rc3fnqk.mongodb.net/?appName=Cluster0"
+uri = "mongodb+srv://periyasamyj51:03012005bd@cluster0.rc3fnqk.mongodb.net/?appName=Cluster0"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
